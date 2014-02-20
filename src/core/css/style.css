@@ -20,7 +20,7 @@ PRE-DEFINED TAGS
 
 body {
 	height: 100%;
-	background: #C7E5F5;
+	background: black;
 	margin: 0;
 	font-family: 'Helvetica Neue', Helvetica, Arial, Verdana;
 	line-height: 2em;
@@ -55,14 +55,13 @@ img {
 	color: #FFF;
 	border: none;
 	border: 1px solid #222;
-	width: 205px;
-	box-shadow: 2px 2px #97CEEC;
+	width: 205px;	
 	outline: none;
 }
 
 [type=button], [type=submit] {
 	color: #FFF;
-	background: #97CEEC;
+	background: #666;
 	border: none;
 	cursor: pointer;
 }
@@ -91,10 +90,7 @@ div#bubble {
 	width: 716px;
 	height: 500px;
 	margin: 1% auto 0 auto;
-	background: #FFF;
-	border-radius: 15px 0 15px 15px;
-	box-shadow: 5px 5px #76BDE5;
-	border: 10px solid #151520;
+	background: black;
 	padding: 0 0 50px 0;
 	display: none;
 }
@@ -119,11 +115,11 @@ div#bubble #logoText {
 	display: inline-block;
 	position: relative;
 	z-index: 100;
-	color: #97CEEC;
+	color: #666;
 	font-family: 'Logotype';
 	-webkit-font-smoothing: none;
 	font-size: 32px;
-	text-shadow: 2px 2px #45A7DD;
+	text-shadow: 0px 2px #888;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	user-select: none;
@@ -162,7 +158,7 @@ div#bubble #loginForm [type=text] {
 	padding: 7px;
 	text-align: center;
 	resize: none;
-	background: #97CEEC;
+	background: #666;
 }
 
 div#bubble #loginForm #nickname {
@@ -180,9 +176,6 @@ div#bubble #loginSubmit {
 	position: relative;
 	bottom: 2px;
 	font-size: 1.6em;
-	border: 1px solid #76BDE5;
-	box-shadow: 2px 2px #76BDE5;
-
 }
 
 div#bubble #loginSubmit:hover {
@@ -196,7 +189,7 @@ div#bubble #loginSubmit:active {
 div#loginInfo {
 	text-align: center;
 	font-size: 1.3em;
-	background: #97CEEC;
+	background: #666;
 	padding: 3px;
 	color: #FFF;
 	border-radius: 0 0 4px 4px;
@@ -205,9 +198,7 @@ div#loginInfo {
 }
 
 div#bubble div#info {
-	border: 1px solid #97ceec;
 	padding: 4px 10px;
-	box-shadow: 4px 4px #97CEEC;
 	border-radius: 4px 0 4px 4px;
 	margin: 20px auto;
 	width: 650px;
@@ -218,7 +209,11 @@ div#bubble div#info {
 }
 
 div#bubble #info #introParagraph {
-	color: #333;
+	color: #666;
+}
+
+div#bubble #info {
+	color: white;
 }
 
 div#bubble #info li {
@@ -241,7 +236,7 @@ div#bubble h1 {
 }
 
 div#bubble #footer {
-	background: #151520;
+	background: black;
 	width: 100%;
 	height: 14px;
 	padding: 1px 0 2px 2px;
@@ -255,7 +250,7 @@ div#bubble #footer {
 }
 
 div#footer a {
-	color: #97CEEC;
+	color: #666;
 }
 
 div#footer #version {
@@ -305,13 +300,13 @@ div#customServerDialog input.disabled {
 }
 
 div#customServerDialog input.confirm {
-	color: #97CEEC;
+	color: #666;
 }
 
 div#customServerDialog [type=button] {
 	display: inline;
 	width: 96px;
-	box-shadow: 2px 2px #97CEEC;
+	box-shadow: 2px 2px #666;
 }
 
 div#customServerDialog #customServerSubmit {
@@ -422,7 +417,7 @@ BUDDY LIST
 }
 
 .buddy.currentConversation {
-	background-color: #97CEEC;
+	background-color: #666;
 }
 
 
@@ -445,7 +440,7 @@ BUDDY LIST
 }
 
 .buddyMenu:hover {
-	background-color: #97CEEC;
+	background-color: #666;
 }
 
 .buddyMenu:active {
@@ -520,7 +515,7 @@ DIALOG BOX
 	position: absolute;
 	width: 470px;
 	height: 240px;
-	border: 1px solid #97CEEC;
+	border: 1px solid #666;
 	border-radius: 8px 0 8px 8px;
 	margin: 120px auto 0 -235px;
 	left: 50%;
@@ -528,11 +523,11 @@ DIALOG BOX
 	font-size: 1.1em;
 	border-right: none;
 	border-bottom: none;
-	background: #FCFCFC;
-	box-shadow: 5px 5px #97CEEC;
+	background: black;
+	box-shadow: 0px 5px #666;
 	top: -20px;
 	display: none;
-	color: #151520;
+	color: white;
 	font-family: 'Monda';
 }
 
@@ -549,7 +544,7 @@ DIALOG BOX
 	font-size: 0;
 	text-align: center;
 	color: #FFF;
-	background: #97CEEC;
+	background: #666;
 	float: right;
 	margin-top: 4px;
 	padding-bottom: 4px;
@@ -597,7 +592,7 @@ DIALOG BOX
 
 #authInfo #authQuestion, #authInfo #authAnswer {
 	box-shadow: none;
-	background: rgba(151, 206, 236, 0.7);
+	background: #888;
 	padding: 4px;
 	width: 260px;
 	border: none;
@@ -612,7 +607,7 @@ DIALOG BOX
 	margin: -35px 20px 0px 0;
 	border-radius: 5px 0 5px 5px;
 	font-size: 1.2em;
-	background: #97CEEC;
+	background: #666;
 	border: none;
 }
 
@@ -629,7 +624,7 @@ DIALOG BOX
 }
 
 #authReply {
-	background: #97CEEC;
+	background: #666;
 	border: none;
 	border-radius: 5px 0 5px 5px;
 	padding: 4px;
@@ -659,7 +654,7 @@ DIALOG BOX
 #progressForm img {
 	float: left;
 	margin: 8px 20px 0 0;
-	box-shadow: 2px 2px #97CEEC;
+	box-shadow: 2px 2px #666;
 }
 
 #progressInfo {
@@ -682,14 +677,14 @@ DIALOG BOX
 	margin-top: 10px;
 	height: 18px;
 	width: 290px;
-	border: 1px solid #97CEEC;
+	border: 1px solid #666;
 	padding: 1px;
 }
 
 #progressBar #fill {
 	height: 100%;
 	width: 0%;
-	background: #97CEEC;
+	background: #666;
 	opacity: 0.3;
 }
 
@@ -699,20 +694,20 @@ DIALOG BOX
 	display: inline-block;
 	vertical-align: -5px;
 	margin-left: 10px;
-	border: 1px solid #97CEEC;
+	border: 1px solid #666;
 	padding: 1px;
 }
 
 .fileProgressBarFill {
 	height: 100%;
 	width: 0%;
-	background: #97CEEC;
+	background: #666;
 }
 
 #dialogBox .title {
 	padding: 5px 20px 5px 10px;
 	border-left: none;
-	background: #97CEEC;
+	background: #666;
 	max-width: 220px;
 	margin-bottom: 8px;
 	color: #FFF;
@@ -733,11 +728,11 @@ DIALOG BOX
 
 #dialogBox #resetKeysOK {
 	background: #151520;
-	border: 1px solid #97CEEC;
-	color: #97CEEC;
+	border: 1px solid #666;
+	color: #666;
 	margin: 0 auto;
 	width: 100px;
-	box-shadow: 2px 2px #97CEEC;
+	box-shadow: 2px 2px #666;
 	font-size: 1.2em;
 	cursor: pointer;
 }
@@ -781,7 +776,7 @@ CONVERSATION WINDOW
 
 #conversationInfo .conversationName {
 	color: #FFF;
-	background: #97CEEC;
+	background: #666;
 	padding: 2px 7px;
 	border-radius: 3px 0 3px 3px;
 	font-size: 1.1em;
@@ -844,21 +839,18 @@ CONVERSATION WINDOW
 }
 
 .missingRecipients {
-	background: #F00;
+	background: black;
+	color: #F00;
 	width: 574px;
 	border-radius: 3px 0 0 0;
 	margin-bottom: 1px;
-	color: #FFF;
 	padding: 2px 10px;
 	opacity: 0;
 }
 
 .line1, .line2, .line3, .line4 {
-	box-shadow: 2px 2px #76BDE5;
-	border: 2px solid #76BDE5;
-	border-radius: 3px 0 3px 3px;
 	padding: 0 4px;
-	color: #080812;
+	color: white;
 	word-wrap: break-word;
 	text-align: left;
 	position: relative;
@@ -870,13 +862,8 @@ CONVERSATION WINDOW
 	white-space: pre-wrap;
 }
 
-.line1 {
-	box-shadow: 2px 2px #97CEEC;
-	border: 2px solid #97CEEC;
-}
-
 .line3 {
-	background-color: #EFF9FE;
+	background-color: #555;
 }
 
 .line4 {
@@ -887,12 +874,12 @@ CONVERSATION WINDOW
 }
 
 .line1 .sender {
-	background: #97CEEC;
+	background: #666;
 	color: #FFF;
 }
 
 .line2 .sender, .line3 .sender {
-	background: #76BDE5;
+	background: #333;
 	color: #FFF;
 }
 
@@ -901,16 +888,9 @@ CONVERSATION WINDOW
 	color: #F00;
 }
 
-.line1:after, .line2:after, .line3:after, .line4:after {
-	content: '';
-	position: absolute;
-	top: 100%;
-	border: 10px solid;
-}
-
 .line1:after {
 	right: 30px;
-	border-color: #97CEEC transparent transparent transparent;
+	border-color: #666 transparent transparent transparent;
 }
 
 .line2:after {
@@ -959,10 +939,7 @@ CONVERSATION WINDOW
 	height: 48px;
 	float: right;
 	margin: 10px 3px 0 0;
-	border-radius: 0px 0 7px 0px;
 	font-size: 1.8em;
-	text-shadow: 3px 2px #76BDE5;
-	box-shadow: 2px 2px #76BDE5;
 }
 
 #userInputSend:hover {
@@ -974,7 +951,7 @@ CONVERSATION WINDOW
 }
 
 .fileView {
-	background: #97CEEC;
+	background: #666;
 	color: #FFF;
 	padding: 0 5px 0 21px;
 	font-size: 0.9em;
@@ -987,7 +964,7 @@ CONVERSATION WINDOW
 }
 
 .userJoin, .userLeave {
-	background: #97CEEC;
+	background: #666;
 	max-width: 165px;
 	display: block;
 	margin: 0 0 15px 0;
@@ -998,7 +975,7 @@ CONVERSATION WINDOW
 }
 
 .userLeave {
-	background: #DADADA;
+	background: #942500;
 }
 
 .userJoin .timestamp, .userLeave .timestamp {

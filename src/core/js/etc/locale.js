@@ -1,10 +1,8 @@
 Cryptocat.locale = {}
 
-// Get locale file, call other functions
-Cryptocat.locale.set = function(locale) {
-	locale = Cryptocat.locale.handleAliases(locale.toLowerCase())
+Cryptocat.locale.set = function(locale) { // Locales are not needed.
 	$.ajax({
-		url : 'locale/' + locale + '.txt',
+		url : 'locale/en.txt',
 		dataType: 'text',
 		accepts: 'text/html',
 		contentType: 'text/html',
@@ -28,7 +26,7 @@ Cryptocat.locale.set = function(locale) {
 			}
 		},
 		error: function() {
-			Cryptocat.locale.set('en')
+			
 		}
 	})
 }
