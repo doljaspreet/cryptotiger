@@ -996,18 +996,19 @@ $('#userInputText').keydown(function(e) {
 		destination = Cryptocat.currentConversation
 		type = 'chat'
 	}
-	if (paused === false) {
+	/*if (paused === false) {
 		Cryptocat.xmpp.connection.muc.message(
 			Cryptocat.conversationName + '@' + Cryptocat.xmpp.conferenceServer,
 			destination, '', null, type, 'composing'
 		)
-	}
+	}*/
 	window.clearTimeout(paused)
 	paused = window.setTimeout(function(d, t) {
+	/*
 		Cryptocat.xmpp.connection.muc.message(
 			Cryptocat.conversationName + '@' + Cryptocat.xmpp.conferenceServer,
 			d, '', null, t, 'paused'
-		)
+		) */
 		paused = false
 	}, 5000, destination, type)
 })
