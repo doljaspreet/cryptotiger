@@ -417,10 +417,12 @@ PRIVATE INTERFACE FUNCTIONS
 -------------------
 */
 
-// Outputs the current hh:mm.
+// Outputs the current hh:mm in UTC to safely
+// send screenshots without revealing your timezone.
 // If `seconds = true`, outputs hh:mm:ss.
 function currentTime(seconds) {
 	var date = new Date()
+	date = new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(),  date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
 	var time = []
 	time.push(date.getHours().toString())
 	time.push(date.getMinutes().toString())
