@@ -7,7 +7,7 @@ GLOBAL VARIABLES
 if (typeof Cryptocat === 'undefined') {
 	Cryptocat = function() {}
 }
-Cryptocat.version = '1.0.0 (based on Cryptocat 2.1.20)' // Version number
+Cryptocat.version = 'Cryptotiger 1.0.1 (based on Cryptocat 2.1.20)' // Version number
 
 Cryptocat.ignoredUsers = []
 Cryptocat.authenticatedUsers = []
@@ -210,7 +210,7 @@ Cryptocat.showAuthenticated = function(nickname, speed) {
 	window.setTimeout(function() {
 		$('#authInfo').animate({
 			'height': 44,
-			'background-color': '#97CEEC',
+			'background-color': '#666',
 			'margin-top': '15px'
 		}, speed, function() {
 			$('#authVerified').fadeIn(speed)
@@ -557,25 +557,6 @@ function addLinks(message) {
 		)
 	}
 	return message
-}
-
-// Convert text emoticons to graphical emoticons.
-function addEmoticons(message) {
-	return message
-		.replace(/(\s|^)(:|(=))-?3(?=(\s|$))/gi, ' <div class="emoticon eCat">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?\&apos;\((?=(\s|$))/gi, ' <div class="emoticon eCry">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?o(?=(\s|$))/gi, ' <div class="emoticon eGasp">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?D(?=(\s|$))/gi, ' <div class="emoticon eGrin">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?\((?=(\s|$))/gi, ' <div class="emoticon eSad">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?\)(?=(\s|$))/gi, ' <div class="emoticon eSmile">$&</div> ')
-		.replace(/(\s|^)-_-(?=(\s|$))/gi, ' <div class="emoticon eSquint">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?p(?=(\s|$))/gi, ' <div class="emoticon eTongue">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?(\/|s)(?=(\s|$))/gi, ' <div class="emoticon eUnsure">$&</div> ')
-		.replace(/(\s|^);-?\)(?=(\s|$))/gi, ' <div class="emoticon eWink">$&</div> ')
-		.replace(/(\s|^);-?\p(?=(\s|$))/gi, ' <div class="emoticon eWinkTongue">$&</div> ')
-		.replace(/(\s|^)\^(_|\.)?\^(?=(\s|$))/gi, ' <div class="emoticon eHappy">$&</div> ')
-		.replace(/(\s|^)(:|(=))-?x\b(?=(\s|$))/gi, ' <div class="emoticon eShut">$&</div> ')
-		.replace(/(\s|^)\&lt\;3\b(?=(\s|$))/g, ' <span class="monospace">&#9829;</span> ')
 }
 
 // Bind timestamps to show when message sender is hovered.
@@ -926,7 +907,7 @@ $('#audio').click(function() {
 // Logout button.
 $('#logout').click(function() {
 	$('#loginInfo').text(Cryptocat.locale['loginMessage']['thankYouUsing'])
-	$('#loginInfo').animate({'background-color': '#97CEEC'}, 200)
+	$('#loginInfo').animate({'background-color': '#666'}, 200)
 	Cryptocat.logout()
 })
 
@@ -1030,7 +1011,7 @@ $('#userInputSubmit').click(function() {
 $('#languageSelect').click(function() {
 	$('#customServerDialog').hide()
 	$('#languages li').css({'color': '#FFF', 'font-weight': 'normal'})
-	$('#' + Cryptocat.locale['language']).css({'color': '#97CEEC', 'font-weight': 'bold'})
+	$('#' + Cryptocat.locale['language']).css({'color': '#666', 'font-weight': 'bold'})
 	$('#footer').animate({'height': 180}, function() {
 		$('#languages').fadeIn()
 	})
