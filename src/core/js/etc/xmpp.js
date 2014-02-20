@@ -22,11 +22,11 @@ Cryptocat.xmpp.connect = function() {
 	Cryptocat.xmpp.connection = new Strophe.Connection(Cryptocat.xmpp.relay)
 	Cryptocat.xmpp.connection.connect(Cryptocat.xmpp.domain, null, function(status) {
 		if (status === Strophe.Status.CONNECTING) {
-			$('#loginInfo').animate({'background-color': '#97CEEC'}, 200)
+			$('#loginInfo').animate({'background-color': '#ff6b3c'}, 200)
 			$('#loginInfo').text(Cryptocat.locale['loginMessage']['connecting'])
 		}
 		else if (status === Strophe.Status.CONNECTED) {
-			$('.conversationName').animate({'background-color': '#97CEEC'})
+			$('.conversationName').animate({'background-color': '#006b3c'})
 			Cryptocat.xmpp.connection.ibb.addIBBHandler(Cryptocat.otr.ibbHandler)
 			/* jshint -W106 */
 			Cryptocat.xmpp.connection.si_filetransfer.addFileHandler(Cryptocat.otr.fileHandler)
@@ -110,7 +110,7 @@ Cryptocat.xmpp.reconnect = function() {
 			$('.conversationName').animate({'background-color': '#F00'})
 		}
 		else if (status === Strophe.Status.CONNECTED) {
-			$('.conversationName').animate({'background-color': '#97CEEC'})
+			$('.conversationName').animate({'background-color': '#006b3c'})
 			Cryptocat.xmpp.connection.ibb.addIBBHandler(Cryptocat.otr.ibbHandler)
 			/* jshint -W106 */
 			Cryptocat.xmpp.connection.si_filetransfer.addFileHandler(Cryptocat.otr.fileHandler)
