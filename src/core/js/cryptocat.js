@@ -135,7 +135,7 @@ Cryptocat.addToConversation = function(message, nickname, conversation, type) {
 		}
 		message = Strophe.xmlescape(message)
 		message = addLinks(message)
-		message = addEmoticons(message)
+		// message = addEmoticons(message)
 		if (message.match(Cryptocat.myNickname)) { lineDecoration = 3 }
 	}
 	else if (type === 'warning') {
